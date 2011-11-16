@@ -1,0 +1,143 @@
+html,body{
+      margin:0;
+      padding:0;
+      height:100%;
+      border:none
+   }
+   
+   
+   	.dhtmlgoodies_tabPane{
+		height:21px;	/* Height of tabs */
+		border-bottom:1px solid #919b9c;
+	}
+	.dhtmlgoodies_aTab{
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	padding:5px;
+	
+	
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #919b9c;
+	border-bottom-color: #919b9c;
+	border-left-color: #919b9c;
+	}
+	.dhtmlgoodies_tabPane DIV{
+		float:left;
+		height:100%;	/* Height of tabs */
+		padding-left:3px;
+		vertical-align:middle;
+		background-repeat:no-repeat;
+		background-position:bottom left;
+		cursor:pointer;
+		position:relative;
+		bottom:-1px;
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.dhtmlgoodies_tabPane .tabActive{
+		background-image:url('../editor_images/tab_left_active.gif');
+		margin-left:0px;
+		margin-right:0px;	
+		z-index:1;	
+	}
+	.dhtmlgoodies_tabPane .tabInactive{
+		background-image:url('../editor_images/tab_left_inactive.gif');
+		margin-left:0px;
+		margin-right:0px;
+		z-index:1;
+	}
+
+	.dhtmlgoodies_tabPane .inactiveTabOver{
+		background-image:url('../editor_images/tab_left_over.gif');
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.dhtmlgoodies_tabPane span{
+		font-family:arial;
+		vertical-align:top;
+		font-size:11px;
+		padding-left:3px;
+		padding-right:3px;		
+		line-height:21px;
+		float:left;
+	}
+	.dhtmlgoodies_tabPane .tabActive span{
+		padding-bottom:1px;
+		line-height:20px;
+	}
+	
+	.dhtmlgoodies_tabPane img{
+		float:left;
+	}
+   
+   
+/*	TABBER */
+#admin .tabberlive .tabbertabhide {
+ display:none;
+}
+#admin ul.tabbernav
+{
+ margin: 3px 0 0 0;
+ padding: 2px 0px;
+ border-bottom: 1px solid #778;
+ font: 11px Tahoma, Arial, Helvetica, sans-serif;
+}
+#admin ul.tabbernav li
+{
+ list-style: none;
+ display: inline;
+}
+#admin ul.tabbernav li a
+{ 
+ 	padding: 3px 13px;
+ 	margin-left: 0px;
+ 	margin-right: 1px;
+ 	border-right: 1px solid #778;
+ 	background-image:url(../editor_images/tab_left_inactive.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+ 	border-bottom: none;
+ 	text-decoration: none;
+ 	color: #000000;
+}
+#admin ul.tabbernav li a:hover
+{
+ 	color: #000000;
+ 	background-image:url(../editor_images/tab_left_over.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+#admin ul.tabbernav li.tabberactive a
+{	
+ 	background-image:url(../editor_images/tab_left_active.gif);
+	background-repeat: no-repeat;
+	background-position: left top;	
+ 	padding-top:5px;
+	margin-left: 0px;
+	margin-right: 1px;
+}
+#admin ul.tabbernav li.tabberactive span
+{
+ background-image:url(../editor_images/tab_right_active.gif);
+	background-repeat: no-repeat;
+	background-position: right top;	
+}
+#admin ul.tabbernav li.tabberactive a:hover
+{
+	color: #000;
+ 	border-bottom: none;
+	background-color: white;
+	background-image: url(../editor_images/tab_left_active.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+#admin .tabberlive .tabbertab {
+ padding:5px;
+ border:1px solid #aaa;
+ border-top:0;
+}
+#admin .tabberlive .tabbertab h2,.tabberlive .tabbertab h3 { display:none; }

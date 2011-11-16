@@ -1,0 +1,59 @@
+#GalleryFooter {width:100%;background:none;border-top:none;}
+#GalleryFooter td {text-align:center;}
+#GalleryFooter span {text-decoration:none;color:#000000;text-align:center;background-color:#CCCCCC;padding:3px;padding-left:5px;padding-right:5px;margin-left:1px;margin-right:1px;}
+#GalleryFooter #pag {font:12px arial,sans-serif;}
+#GalleryFooter #pag a:link,#GalleryFooter #pag a:visited {padding:3px;padding-left:5px;padding-right:5px;margin-left:1px;margin-right:1px;}
+#GalleryFooter #pag a:hover {background-color:#CCCCCC;text-decoration:none;color:#000000;}
+#pagNewLine { display: block; height: 8px; }
+.GalleryGImg {
+
+background: url(images/shadow.png) no-repeat bottom right;
+padding-right:6px;
+padding-bottom:6px;
+
+}
+
+ul#GalleryThList li {
+list-style:none;
+float:left;
+margin:0;
+padding:0;
+background:none;
+}
+html ul#GalleryThList li {list-style:none;}
+
+.GalleryGImg img { display:block; margin:0}
+.GalleryGImg a {
+
+border: 1px solid #fff;
+display:block;
+margin:2px; padding:0;
+
+}
+
+.GalleryGImg a:hover {
+
+border: 1px solid #000;
+margin:0;
+padding:2px;	
+background: #fff url(./../../editor_images/loadingbg.gif)
+
+}
+
+#galleryComment {
+	display: block;
+	border-top: 1px solid #ccc;
+	margin: 2px;
+	padding: 2px;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#galleryItem a:link, #galleryItem a:visited {
+	border: 1px solid #ccc;
+	display: block;
+	padding: 1px;
+	margin: 3px;
+}
+#galleryItem a:hover {
+	border-color: #000;
+}

@@ -1,0 +1,4 @@
+p#vtip { display: none; position: absolute; padding: 10px; left: 5px; background:#FFFFC9 url(../../editor_images/messageBack.png) top repeat-x; border: 2px solid #FFB900; -moz-border-radius: 5px; -webkit-border-radius: 5px; z-index: 9999; font:11px "Lucida Sans Unicode", "Lucida Grande", arial, sans-serif; color:#000; }
+p#vtip #vtipArrow { position: absolute; top: -10px; left: 5px }
+p#vtip strong { border-bottom:1px solid black; display:block; margin-bottom:5px;}
+p#vtip span { font-weight:bold; }

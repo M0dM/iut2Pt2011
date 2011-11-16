@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="" company="" manager="" phase="" project-start="20111008T000000Z" mrproject-version="2" calendar="1">
+<project name="SMID" company="" manager="" phase="" project-start="20111008T000000Z" mrproject-version="2" calendar="1">
   <properties/>
   <phases/>
   <calendars>
@@ -20,53 +20,82 @@
     </calendar>
   </calendars>
   <tasks>
-    <task id="1" name="R&#xE9;daction CDCF" note="" work="1008000" start="20111008T000000Z" end="20111125T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="2" name="R&#xE9;daction des CU" note="" work="57600" start="20111008T000000Z" end="20111011T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="3" name="Diagramme de classe" note="" work="86400" start="20111008T000000Z" end="20111011T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="4" name="Mise en &#xE9;vidence des donn&#xE9;es" note="" work="28800" start="20111008T000000Z" end="20111010T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="5" name="Mise en &#xE9;vidence des associations" note="" work="28800" start="20111008T000000Z" end="20111010T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="6" name="Diagramme de classe" note="" work="28800" start="20111010T170000Z" end="20111011T170000Z" work-start="20111011T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="1" name="R&#xE9;daction CDCF" note="" work="1008000" start="20111008T000000Z" end="20111125T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+    <task id="2" name="R&#xE9;daction des CU" note="" work="57600" start="20111008T000000Z" end="20111011T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+    <task id="3" name="Diagramme de classe" note="" work="86400" start="20111011T170000Z" end="20111013T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="2" type="FS"/>
+      </predecessors>
+      <task id="4" name="Mise en &#xE9;vidence des donn&#xE9;es" note="" work="28800" start="20111011T170000Z" end="20111012T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+      <task id="5" name="Mise en &#xE9;vidence des associations" note="" work="28800" start="20111011T170000Z" end="20111012T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+      <task id="6" name="Diagramme de classe" note="" work="28800" start="20111012T170000Z" end="20111013T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="5" type="FS"/>
           <predecessor id="1" predecessor-id="4" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="7" name="Passage au relationnel" note="" work="28800" start="20111011T170000Z" end="20111012T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="7" name="Passage au relationnel" note="" work="28800" start="20111013T170000Z" end="20111014T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="8" name="Diagramme de s&#xE9;quence interm&#xE9;diaire (primordial)" note="" work="144000" start="20111011T170000Z" end="20111018T170000Z" work-start="20111012T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="8" name="Diagramme de s&#xE9;quence interm&#xE9;diaire (primordial)" note="" work="144000" start="20111013T170000Z" end="20111020T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="9" name="Diagramme de pr&#xE9;sentation &lt;=&gt; Coh&#xE9;rence des boutons/liens" note="" work="86400" start="20111018T170000Z" end="20111021T170000Z" work-start="20111019T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="9" name="Diagramme de pr&#xE9;sentation &lt;=&gt; Coh&#xE9;rence des boutons/liens" note="" work="86400" start="20111020T170000Z" end="20111025T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="8" type="FS"/>
       </predecessors>
     </task>
-    <task id="10" name="Diagramme d'&#xE9;tat transition (primordial)" note="" work="172800" start="20111008T000000Z" end="20111017T170000Z" work-start="20111010T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="11" name="Codage des fonctions de base" note="" work="547200" start="20111017T170000Z" end="20111110T170000Z" work-start="20111018T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="10" name="Diagramme de s&#xE9;quence d&#xE9;taill&#xE9;e" note="" work="144000" start="20111020T170000Z" end="20111027T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="8" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="11" name="Diagramme d'&#xE9;tat transition (primordial)" note="" work="172800" start="20111027T170000Z" end="20111104T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="10" type="FS"/>
       </predecessors>
-      <task id="12" name="Traduction du diagramme de classe" note="" work="28800" start="20111017T170000Z" end="20111018T170000Z" work-start="20111018T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="13" name="Traduction du diagramme de pr&#xE9;s. (m&#xE9;thode d'affichage)" note="" work="86400" start="20111017T170000Z" end="20111020T170000Z" work-start="20111018T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="14" name="Contenu des m&#xE9;thodes" note="" work="432000" start="20111020T170000Z" end="20111110T170000Z" work-start="20111021T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    </task>
+    <task id="12" name="Architecture global" note="" work="57600" start="20111104T170000Z" end="20111108T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="13" name="Codage des fonctions de base" note="" work="547200" start="20111108T170000Z" end="20111202T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="12" type="FS"/>
+        <predecessor id="1" predecessor-id="10" type="FS"/>
+      </predecessors>
+      <task id="14" name="Traduction du diagramme de classe" note="" work="28800" start="20111108T170000Z" end="20111109T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+      <task id="15" name="Traduction du diagramme de pr&#xE9;s. (m&#xE9;thode d'affichage)" note="" work="86400" start="20111108T170000Z" end="20111111T170000Z" percent-complete="0" type="normal" scheduling="fixed-work"/>
+      <task id="16" name="Contenu des m&#xE9;thodes" note="" work="432000" start="20111111T170000Z" end="20111202T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
         <predecessors>
-          <predecessor id="1" predecessor-id="13" type="FS"/>
+          <predecessor id="1" predecessor-id="15" type="FS"/>
         </predecessors>
       </task>
     </task>
-    <task id="15" name="Documentation du code (fonctions de base)" note="" work="547200" start="20111020T170000Z" end="20111116T170000Z" work-start="20111021T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="17" name="Documentation du code (fonctions de base)" note="" work="547200" start="20111111T170000Z" end="20111208T170000Z" percent-complete="0" type="normal" scheduling="fixed-work">
       <predecessors>
-        <predecessor id="1" predecessor-id="13" type="FS"/>
+        <predecessor id="1" predecessor-id="15" type="FS"/>
       </predecessors>
     </task>
   </tasks>
-  <resource-groups/>
-  <resources/>
+  <resource-groups default_group="1">
+    <group id="1" name="Serveur" admin-name="" admin-phone="" admin-email=""/>
+    <group id="2" name="Client" admin-name="" admin-phone="" admin-email=""/>
+    <group id="3" name="Interface" admin-name="" admin-phone="" admin-email=""/>
+  </resource-groups>
+  <resources>
+    <resource group="2" id="1" name="Niza" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="1" id="2" name="Romarick" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="2" id="3" name="Benoit" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="2" id="4" name="Tom" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="1" id="5" name="Karine" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource group="1" id="6" name="Kevin" type="1" units="0" email="" note="" std-rate="0"/>
+  </resources>
   <allocations/>
 </project>

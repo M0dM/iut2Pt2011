@@ -1,0 +1,52 @@
+.dropmenudiv, .dropmenudiv ul, .dropmenudiv li ul{ /*added: , .dropmenudiv ul, .dropmenudiv li ul */
+	font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+	position:absolute;
+	top: 0;
+	border: 1px solid #666;
+	color: black;
+	line-height:20px;
+	z-index:100;
+	background: #fff;
+	width: 200px;
+	visibility: hidden;
+	text-decoration: none;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 2px;
+	padding-left: 1px;
+}
+
+.dropmenudiv li a{ /* update: ".dropmenudiv li a" instead ".dropmenudiv a" */
+	width: 196px;
+	display: block;
+	text-indent: 3px;
+	border: 1px solid #FFFFFF;
+	border-bottom-width: 0;
+	text-decoration: none; text-align: left;
+	color: #000;
+	background: #F0F0F0;
+	padding: 2px 0 2px 2px;
+}
+
+
+.dropmenudiv li a:hover{ /* update: ".dropmenudiv li a:hover" instead ".dropmenudiv a:hover" */
+	background-color: #BFCBDD;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+
+/* Chrome 1 to Chrome 2 compatibility: */
+
+.dropmenudiv, .dropmenudiv ul{
+	
+list-style-type: none;
+
+}.dropmenudiv ul{
+	
+margin:0;
+padding:0;
+
+}
